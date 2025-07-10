@@ -1,22 +1,26 @@
 // src/app/[locale]/page.tsx
 import { setRequestLocale } from 'next-intl/server';
-import type { PageProps } from '@/types/layout';
 import NextLink from 'next/link';
 import { parseLinktreeEnv } from '@/components/parser';
 
-export default async function IndexPage(props: PageProps) {
-  const params = await props.params;
-  const { locale } = params;
+export default async function IndexPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
 
   setRequestLocale(locale);
 
-  const linktree_heading = process.env.NEXT_PUBLIC_LINKTREE_NAME
+  const linktree_heading = process.env.NEXT_PUBLIC_LINKTREE_NAME;
 
   const linktrees = {
     de: parseLinktreeEnv(process.env.NEXT_PUBLIC_LINKTREE_DE),
-    en: parseLinktreeEnv(process.env.NEXT_PUBLIC_LINKTREE_EN)
-  }
-  const links = linktrees[locale as 'de' | 'en'];
+    en: parseLinktreeEnv(process.env.NEXT_PUBLIC_LINKTREE_EN),
+  };
+
+  const links = linktrees[locale as 'de' | 'en'] || [];
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
       <div className="max-w-md w-full space-y-4 text-center">
@@ -31,7 +35,6 @@ export default async function IndexPage(props: PageProps) {
             {link.label}
           </NextLink>
         ))}
-
       </div>
     </div>
   );
