@@ -1,0 +1,48 @@
+{
+  "base": {
+    "contact": "Contact",
+    "legal": "Legal Notice"
+  },
+  "form": {
+    "title": "Contact Form",
+    "submit": "Send",
+    "privacy": "I have read and agree to the <link>privacy policy (opens in new tab)</link>.",
+    "error": "Error sending message. Please try again.",
+    "name": "Name",
+    "email": "E-mail",
+    "message": "Message"
+  },
+  "404": {
+    "title": "Page not found",
+    "description": "The page you requested does not exist.",
+    "back": "Back to home"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This website is a purely private project. It only provides personal content and information. No personal data is stored or processed without your consent.",
+    "formTitle": "Contact Form",
+    "formText": "If you send me a message via the contact form, your request will be processed via the <strong>Web3Forms</strong> service. Your name, email address, and message will be used solely for contact purposes. Data is transmitted securely.",
+    "formLinkLabel": "web3forms.com/privacy",
+    "hostingTitle": "Hosting",
+    "hostingText": "This website is hosted by <strong>Vercel</strong> (Vercel Inc.). When accessing the site, Vercel may store technical access data (e.g., IP address, timestamp, user agent) for error analysis and infrastructure protection.",
+    "hostingLinkLabel": "vercel.com/legal/privacy-policy",
+    "nocookiesTitle": "No Cookies",
+    "nocookiesText": "This website uses no cookies and no analytics tools. Your data will not be shared with third parties.",
+    "back": "← Back to homepage"
+  },
+  "impressum": {
+    "title": "Legal Notice",
+    "intro": "This website is a purely private, non-commercial project according to § 55 RStV.",
+    "responsible": "Responsible for the content according to § 55 Abs. 2 RStV:",
+    "disclaimer": "No warning without prior contact. If you have legal concerns, please reach out to the email address above."
+  },
+  "thanks": {
+    "thankyou": "Thank You!",
+    "message": "Your message was successfully delivered. I'll get back to you as soon as I can"
+  },
+  "language": {
+    "de": "German",
+    "en": "English",
+    "ariaLabel": "Language selection"
+  }
+}

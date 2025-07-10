@@ -1,0 +1,43 @@
+{
+    "base": {
+        "contact": "Kontakt",
+        "legal": "Impressum"
+    },
+    "form": {
+        "title": "Kontaktformular",
+        "submit": "Senden",
+        "privacy": "Ich habe die <link>Datenschutzerklärung (öffnet in neuem Tab)</link> gelesen und stimme zu.",
+        "error": "Fehler beim Senden. Bitte erneut versuchen.",
+        "name": "Name",
+        "email": "E-Mail",
+        "message": "Nachricht"
+    },
+    "404": {
+        "title": "Seite nicht gefunden",
+        "description": "Die angeforderte Seite existiert nicht.",
+        "back": "Zur Startseite"
+    },
+    "privacy": {
+        "title": "Datenschutzerklärung",
+        "intro": "Diese Website ist ein rein privates Projekt. Sie dient ausschließlich der Bereitstellung persönlicher Inhalte und Informationen. Es werden keine personenbezogenen Daten ohne Ihre Zustimmung gespeichert oder verarbeitet.",
+        "formTitle": "Kontaktformular",
+        "formText": "Wenn Sie mir über das Kontaktformular eine Nachricht senden, wird Ihre Anfrage über den Dienst <strong>Web3Forms</strong> verarbeitet. Dabei werden Ihr Name, Ihre E-Mail-Adresse und Ihre Nachricht ausschließlich zum Zweck der Kontaktaufnahme verwendet. Die Datenübertragung erfolgt verschlüsselt.",
+        "formLinkLabel": "web3forms.com/privacy",
+        "hostingTitle": "Hosting",
+        "hostingText": "Diese Website wird über <strong>Vercel</strong> (Vercel Inc.) bereitgestellt. Beim Aufruf der Seiten speichert Vercel ggf. technische Zugriffsdaten (z.B. IP-Adresse, Zeitpunkt, User-Agent) zur Fehleranalyse und zum Schutz der Infrastruktur.",
+        "hostingLinkLabel": "vercel.com/legal/privacy-policy",
+        "nocookiesTitle": "Keine Cookies",
+        "nocookiesText": "Diese Website verwendet keine Cookies und keine Analyse-Tools. Es erfolgt keine Weitergabe Ihrer Daten an Dritte.",
+        "back": "← Zurück zur Startseite"
+    },
+    "impressum": {
+        "title": "Impressum",
+        "intro": "Diese Website ist ein rein privates, nicht-kommerzielles Projekt im Sinne von § 55 RStV.",
+        "responsible": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
+        "disclaimer": "Keine Abmahnung ohne vorherigen Kontakt. Bei Problemen oder rechtlichen Bedenken bitte ich um eine Nachricht an die oben genannte E-Mail-Adresse."
+    },
+    "thanks": {
+        "thankyou": "Vielen Dank!",
+        "message": "Deine Nachricht wurde erfolgreich gesendet. Ich melde mich so bald wie möglich."
+    }
+}
