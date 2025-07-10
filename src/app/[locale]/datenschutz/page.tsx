@@ -3,7 +3,7 @@ import { getTranslations, getLocale } from 'next-intl/server';
 import Link from 'next/link';
 
 export default async function DatenschutzPage() {
-  const locale = await getLocale(); // 👈 funktioniert wirklich
+  const locale = await getLocale();
   const t = await getTranslations({ locale, namespace: 'privacy' });
 
   return (

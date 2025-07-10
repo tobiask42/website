@@ -12,12 +12,18 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html>
+    <html lang="de">
       <body className="bg-background text-foreground font-sans">
         {children}
       </body>
     </html>
   );
 }
+
+
