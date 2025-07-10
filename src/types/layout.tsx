@@ -1,6 +1,6 @@
 export type LayoutProps = {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 };
 
 export type PageProps = {
