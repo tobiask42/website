@@ -1,8 +1,9 @@
 // Path: src/app/layout.tsx
 import '@/app/globals.css';
 import type { PageProps } from '@/types/layout';
+import type { Metadata } from 'next';
 
-export const metadata = {
+export const metadata:Metadata = {
   title: 'Webseite von deinem Namen',
   icons: {
     icon: '/favicon.ico',
