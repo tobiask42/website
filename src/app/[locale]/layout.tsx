@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function LocaleLayout(props: PageProps) {
   const { children } = props;
-  const { locale } = await props.params;
+  const { locale } = props.params;
 
 
   if (!hasLocale(routing.locales, locale)) {
