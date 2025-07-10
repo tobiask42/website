@@ -3,7 +3,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import type { PageProps } from '@/types/layout';
+import type { LayoutProps, PageProps } from '@/types/layout';
 import Link from 'next/link';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import type { Metadata } from 'next';
@@ -22,9 +22,9 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 
-export default async function LocaleLayout(props: PageProps) {
+export default async function LocaleLayout(props: LayoutProps) {
   const { children } = props;
-  const { locale } = props.params;
+  const { locale } = await props.params;
 
 
   if (!hasLocale(routing.locales, locale)) {

@@ -1,10 +1,9 @@
 // Path: src/app/layout.tsx
 import '@/app/globals.css';
-import type { PageProps } from '@/types/layout';
 import type { Metadata } from 'next';
 
-export const metadata:Metadata = {
-  title: 'Webseite von deinem Namen',
+export const metadata: Metadata = {
+  title: 'Website',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-32x32.png',
@@ -13,12 +12,9 @@ export const metadata:Metadata = {
   manifest: '/site.webmanifest',
 };
 
-
-
-export default function RootLayout({ children, params }: PageProps) {
-  const {locale} = params
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={locale}>
+    <html>
       <body className="bg-background text-foreground font-sans">
         {children}
       </body>
