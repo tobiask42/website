@@ -6,17 +6,21 @@ import { routing } from '@/i18n/routing';
 import type { PageProps } from '@/types/layout';
 import Link from 'next/link';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import type { Metadata } from 'next';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata(): Promise<any> {
+
+
+export async function generateMetadata(): Promise<Metadata> {
   return {
     title: process.env.NEXT_PUBLIC_TITLE || 'Meine Website',
     description: 'Persönliche Website',
   };
 }
+
 
 export default async function LocaleLayout(props: PageProps) {
   const { children } = props;
