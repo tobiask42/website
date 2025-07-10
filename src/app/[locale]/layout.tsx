@@ -3,7 +3,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import type { LayoutProps, PageProps } from '@/types/layout';
+import type { LayoutProps } from '@/types/layout';
 import Link from 'next/link';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import type { Metadata } from 'next';
