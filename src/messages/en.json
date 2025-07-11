@@ -26,8 +26,8 @@
     "hostingTitle": "Hosting",
     "hostingText": "This website is hosted by <strong>Vercel</strong> (Vercel Inc.). When accessing the site, Vercel may store technical access data (e.g., IP address, timestamp, user agent) for error analysis and infrastructure protection.",
     "hostingLinkLabel": "vercel.com/legal/privacy-policy",
-    "nocookiesTitle": "No Cookies",
-    "nocookiesText": "This website uses no cookies and no analytics tools. Your data will not be shared with third parties.",
+    "cookiesTitle": "Cookies",
+    "cookiesText": "This website uses cookies for storing language setting. It uses no analytics tools. Your data will not be shared with third parties.",
     "back": "← Back to homepage"
   },
   "impressum": {

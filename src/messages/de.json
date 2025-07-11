@@ -26,8 +26,8 @@
         "hostingTitle": "Hosting",
         "hostingText": "Diese Website wird über <strong>Vercel</strong> (Vercel Inc.) bereitgestellt. Beim Aufruf der Seiten speichert Vercel ggf. technische Zugriffsdaten (z.B. IP-Adresse, Zeitpunkt, User-Agent) zur Fehleranalyse und zum Schutz der Infrastruktur.",
         "hostingLinkLabel": "vercel.com/legal/privacy-policy",
-        "nocookiesTitle": "Keine Cookies",
-        "nocookiesText": "Diese Website verwendet keine Cookies und keine Analyse-Tools. Es erfolgt keine Weitergabe Ihrer Daten an Dritte.",
+        "cookiesTitle": "Cookies",
+        "cookiesText": "Diese Website verwendet Cookies um die Spracheinstellung zu speichern. Sie nutzt keine Analyse-Tools. Es erfolgt keine Weitergabe Ihrer Daten an Dritte.",
         "back": "← Zurück zur Startseite"
     },
     "impressum": {
