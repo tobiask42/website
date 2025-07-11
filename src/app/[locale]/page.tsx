@@ -14,10 +14,10 @@ export default async function IndexPage({
 
   const linktree_heading = process.env.NEXT_PUBLIC_LINKTREE_NAME;
 
-  const linktrees = {
-    de: parseLinktreeEnv(process.env.NEXT_PUBLIC_LINKTREE_DE),
-    en: parseLinktreeEnv(process.env.NEXT_PUBLIC_LINKTREE_EN),
-  };
+const linktrees = {
+  de: parseLinktreeEnv(process.env.NEXT_PUBLIC_LINKTREE_DE ?? '', 'de'),
+  en: parseLinktreeEnv(process.env.NEXT_PUBLIC_LINKTREE_EN ?? '', 'en'),
+};
 
   const links = linktrees[locale as 'de' | 'en'] || [];
 

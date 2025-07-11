@@ -1,12 +1,16 @@
-export function parseLinktreeEnv(env?: string): { label: string; href: string }[] {
-  if (!env) return [];
-
-  return env
+export function parseLinktreeEnv(envValue: string, locale: string) {
+  return (envValue || '')
     .split(',')
-    .map((pair) => pair.split('>'))
-    .filter(([label, href]) => label && href)
-    .map(([label, href]) => ({
-      label: label.trim(),
-      href: href.trim()
-    }));
+    .map((entry) => {
+      const [label, href] = entry.split('>');
+      const trimmedHref = href?.trim();
+      const localizedHref = trimmedHref?.startsWith('/') && !trimmedHref.startsWith(`/${locale}`)
+        ? `/${locale}${trimmedHref}`
+        : trimmedHref;
+
+      return {
+        label: label.trim(),
+        href: localizedHref,
+      };
+    });
 }
