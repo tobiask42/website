@@ -48,8 +48,8 @@ export default async function DatenschutzPage() {
         </a>
       </p>
 
-      <h2 className="text-xl font-semibold mt-8 mb-2">{t('nocookiesTitle')}</h2>
-      <p className="mb-4">{t('nocookiesText')}</p>
+      <h2 className="text-xl font-semibold mt-8 mb-2">{t('cookiesTitle')}</h2>
+      <p className="mb-4">{t('cookiesText')}</p>
 
       <div className="mt-8">
         <Link href={`/${locale}`} className="text-blue-600 hover:underline">

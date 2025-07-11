@@ -16,7 +16,8 @@ It is designed for privacy-compliant personal use and includes:
 - **Bilingual routing** with language switcher
 - **Custom linktree** controlled via environment variables
 - **Accessible form** with field grouping, labels, focus states, and honeypot spam protection
-- **No cookies, no tracking** by default
+- **No tracking** by default
+- **Language Cookie** for storing language settings
 - Designed for **deployment on Vercel**, but portable
 
 ---

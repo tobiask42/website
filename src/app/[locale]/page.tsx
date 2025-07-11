@@ -1,7 +1,7 @@
 // src/app/[locale]/page.tsx
 import { setRequestLocale } from 'next-intl/server';
 import NextLink from 'next/link';
-import { parseLinktreeEnv } from '@/components/parser';
+import { parseLinktreeEnv } from '@/lib/parser';
 
 export default async function IndexPage({
   params,
