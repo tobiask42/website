@@ -1,7 +1,8 @@
 {
   "base": {
     "contact": "Contact",
-    "legal": "Legal Notice"
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy"
   },
   "form": {
     "title": "Contact Form",
@@ -27,7 +28,7 @@
     "hostingText": "This website is hosted by <strong>Vercel</strong> (Vercel Inc.). When accessing the site, Vercel may store technical access data (e.g., IP address, timestamp, user agent) for error analysis and infrastructure protection.",
     "hostingLinkLabel": "vercel.com/legal/privacy-policy",
     "cookiesTitle": "Cookies",
-    "cookiesText": "This website uses cookies for storing language setting. It uses no analytics tools. Your data will not be shared with third parties.",
+    "cookiesText": "This website uses cookies for storing language setting. It uses no analytics tools. Your data will not be shared with third parties. You can deactivate cookies in your browser. The functionality of the website remains largely intact.",
     "back": "← Back to homepage"
   },
   "impressum": {

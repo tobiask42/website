@@ -1,7 +1,8 @@
 {
     "base": {
         "contact": "Kontakt",
-        "legal": "Impressum"
+        "legal": "Impressum",
+        "privacy": "Datenschutz"
     },
     "form": {
         "title": "Kontaktformular",
@@ -34,7 +35,7 @@
         "title": "Impressum",
         "intro": "Diese Website ist ein rein privates, nicht-kommerzielles Projekt im Sinne von § 55 RStV.",
         "responsible": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
-        "disclaimer": "Keine Abmahnung ohne vorherigen Kontakt. Bei Problemen oder rechtlichen Bedenken bitte ich um eine Nachricht an die oben genannte E-Mail-Adresse."
+        "disclaimer": "Keine Abmahnung ohne vorherigen Kontakt. Bei Problemen oder rechtlichen Bedenken bitte ich um eine Nachricht an die oben genannte E-Mail-Adresse. Sie können Cookies in Ihrem Browser deaktivieren. Die Funktionalität der Website bleibt dabei weitgehend erhalten."
     },
     "thanks": {
         "thankyou": "Vielen Dank!",

@@ -63,6 +63,9 @@ export default async function LocaleLayout({
           <Link href={`/${locale}/impressum`} className="hover:underline">
             {t('legal')}
           </Link>
+          <Link href={`/${locale}/datenschutz`} className="hover:underline">
+            {t('privacy')}
+          </Link>
         </div>
         <div>© {new Date().getFullYear()} – {name}</div>
       </footer>
