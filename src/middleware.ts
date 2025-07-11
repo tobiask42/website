@@ -6,7 +6,8 @@ const intlMiddleware = createMiddleware(routing);
 const supportedLocales = ['de', 'en'];
 
 export function middleware(request: NextRequest) {
-  const response = intlMiddleware(request);
+  const intlResponse = intlMiddleware(request);
+  const response = new NextResponse(intlResponse.body, intlResponse);
 
   const pathname = request.nextUrl.pathname;
   const locale = pathname.split('/')[1];
