@@ -13,12 +13,15 @@ It is designed for privacy-compliant personal use and includes:
 
 ## Features
 
-- **Bilingual routing** with language switcher
-- **Custom linktree** controlled via environment variables
-- **Accessible form** with field grouping, labels, focus states, and honeypot spam protection
-- **No tracking** by default
-- **Language Cookie** for storing language settings
-- Designed for **deployment on Vercel**, but portable
+- **Bilingual routing** with dynamic language switching (`next-intl`)
+- **Customizable Linktree homepage** via environment variables
+- **Accessible contact form** (ARIA, honeypot spam protection) powered by [Web3Forms](https://web3forms.com)
+- **Privacy-first**: No analytics or tracking
+- **Language preference stored** via cookie (middleware-based)
+- **Prefilled Legal Pages** (`Impressum` & `Datenschutzerklärung`) for non-commercial personal use
+- Fully **keyboard navigable** and **screen-reader friendly**
+- Deployed with [Vercel](https://vercel.com)
+
 
 ---
 
@@ -33,11 +36,12 @@ NEXT_PUBLIC_WEB3FORMS_KEY=YOUR_ACCESS_KEY_HERE
 NEXT_PUBLIC_NAME=Your Name
 NEXT_PUBLIC_TITLE=Webpage Title
 NEXT_PUBLIC_LINKTREE_NAME=Linktree Heading
-NEXT_PUBLIC_LINKTREE_DE=Kontaktformular>/contact,Example>https://example.com,Example2>https://example2.com
-NEXT_PUBLIC_LINKTREE_EN=Contact Form>/contact,Example>https://example.com,Example2>https://example2.com
+NEXT_PUBLIC_LINKTREE_DE=Kontaktformular>Kontaktseite>/contact,Example>Meine Beispielseite>https://example.com,Example2>https://example2.com
+NEXT_PUBLIC_LINKTREE_EN=Contact Form>/contact,Example>My example page>https://example.com,Example2>https://example2.com
 ```
 - Use `NEXT_PUBLIC_LINKTREE_DE` and `EN` to define language-specific link lists
-- Use `Label>URL` format, separated by commas
+- Use `Label>AriaLabel>URL` format, separated by commas
+- The use of an AriaLabel is recommended for accessibility, but optional
 - One entry must be `/contact` to activate the form route
 ---
 ## Translations

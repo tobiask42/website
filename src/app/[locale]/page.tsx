@@ -14,10 +14,10 @@ export default async function IndexPage({
 
   const linktree_heading = process.env.NEXT_PUBLIC_LINKTREE_NAME;
 
-const linktrees = {
-  de: parseLinktreeEnv(process.env.NEXT_PUBLIC_LINKTREE_DE ?? '', 'de'),
-  en: parseLinktreeEnv(process.env.NEXT_PUBLIC_LINKTREE_EN ?? '', 'en'),
-};
+  const linktrees = {
+    de: parseLinktreeEnv(process.env.NEXT_PUBLIC_LINKTREE_DE ?? '', 'de'),
+    en: parseLinktreeEnv(process.env.NEXT_PUBLIC_LINKTREE_EN ?? '', 'en'),
+  };
 
   const links = linktrees[locale as 'de' | 'en'] || [];
 
@@ -25,16 +25,19 @@ const linktrees = {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
       <div className="max-w-md w-full space-y-4 text-center">
         <h1 className="text-3xl font-bold text-gray-800 mb-6">{linktree_heading}</h1>
-        {links.map((link) => (
-          <NextLink
-            key={link.href}
-            href={link.href}
-            target={link.href.startsWith('http') ? '_blank' : undefined}
-            className="block w-full bg-white border border-gray-300 rounded-lg px-6 py-3 text-blue-600 hover:bg-blue-50 transition"
-          >
-            {link.label}
-          </NextLink>
-        ))}
+        {links
+          .filter((link): link is NonNullable<typeof link> => link != null)
+          .map((link) => (
+            <NextLink
+              key={link.href}
+              href={link.href}
+              target={link.href.startsWith('http') ? '_blank' : undefined}
+              className="block w-full bg-white border border-gray-300 rounded-lg px-6 py-3 text-blue-600 hover:bg-blue-50 transition"
+              aria-label={link.ariaLabel || undefined}
+            >
+              {link.label}
+            </NextLink>
+          ))}
       </div>
     </div>
   );
