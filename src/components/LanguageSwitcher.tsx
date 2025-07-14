@@ -22,13 +22,14 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: string }) {
   const pathSegments = currentIsLocale ? segments.slice(1) : segments;
 
   return (
-    <nav aria-label="Sprachauswahl" className="ml-4 flex items-center space-x-3">
-      <span aria-hidden="true">🌐</span>
-      {routing.locales.map((lng) => {
-        const href = '/' + [lng, ...pathSegments].join('/');
-        return (
+<nav aria-label="Sprachauswahl" className="ml-4 flex items-center space-x-3">
+  <span aria-hidden="true">🌐</span>
+  <ul className="flex space-x-3">
+    {routing.locales.map((lng) => {
+      const href = '/' + [lng, ...pathSegments].join('/');
+      return (
+        <li key={lng}>
           <Link
-            key={lng}
             href={href}
             className={`hover:underline ${
               lng === currentLocale ? 'font-bold text-blue-600' : 'text-gray-500'
@@ -37,8 +38,11 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: string }) {
           >
             {languageLabels[lng]}
           </Link>
-        );
-      })}
-    </nav>
+        </li>
+      );
+    })}
+  </ul>
+</nav>
+
   );
 }
