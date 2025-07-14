@@ -75,6 +75,17 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
+## Testing
+Run vitest:
+```bash
+npx vitest
+```
+Run playwright
+```
+npx playwright test
+```
+---
+
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
