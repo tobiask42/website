@@ -1,6 +1,7 @@
 // Path: src/app/layout.tsx
 import '@/app/globals.css';
 import type { Metadata } from 'next';
+import { getLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'Website',
@@ -12,13 +13,14 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const locale = await getLocale();
   return (
-    <html lang="de">
+    <html lang={locale}>
       <body className="bg-background text-foreground font-sans">
         {children}
       </body>

@@ -38,7 +38,7 @@ export default async function LocaleLayout({
         href="#main"
         className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white text-blue-600 p-2 rounded"
       >
-        Zum Inhalt springen
+        {t('contentJump')}
       </a>
       <header className="bg-white shadow-md py-4 px-6 sticky top-0 z-10">
         <div className="max-w-5xl mx-auto flex justify-between items-center">

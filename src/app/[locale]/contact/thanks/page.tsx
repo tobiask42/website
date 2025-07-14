@@ -1,9 +1,14 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { useEffect } from 'react';
 
 export default function ThanksPage() {
   const t = useTranslations('thanks');
+
+    useEffect(() => {
+    document.getElementById('thankyou-heading')?.focus();
+  }, []);
 
   return (
     <main role="main" className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -13,6 +18,7 @@ export default function ThanksPage() {
       >
         <h1
           id="thankyou-heading"
+          tabIndex={-1}
           className="text-3xl font-bold text-green-600 mb-4"
         >
           {t('thankyou')}

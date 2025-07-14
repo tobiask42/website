@@ -2,16 +2,22 @@
   "base": {
     "contact": "Contact",
     "legal": "Legal Notice",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "contentJump": "Jump to Content"
   },
   "form": {
     "title": "Contact Form",
     "submit": "Send",
-    "privacy": "I have read and agree to the <link>privacy policy (opens in new tab)</link>.",
+    "sending": "sending...",
     "error": "Error sending message. Please try again.",
+    "privacy": "I have read and agree to the <link>privacy policy (opens in new tab)</link>.",
     "name": "Name",
     "email": "E-mail",
-    "message": "Message"
+    "message": "Message",
+    "errorName": "Please enter your name.",
+    "errorEmail": "Please enter a valid E-mail address.",
+    "errorMessage": "Please enter a message.",
+    "privacyRequired": "Please accept the privacy policy."
   },
   "404": {
     "title": "Page not found",

@@ -2,16 +2,23 @@
     "base": {
         "contact": "Kontakt",
         "legal": "Impressum",
-        "privacy": "Datenschutz"
+        "privacy": "Datenschutz",
+        "contentJump": ""
     },
     "form": {
         "title": "Kontaktformular",
         "submit": "Senden",
-        "privacy": "Ich habe die <link>Datenschutzerklärung (öffnet in neuem Tab)</link> gelesen und stimme zu.",
+        "sending": "Wird gesendet...",
+        "success": "Nachricht erfolgreich gesendet!",
         "error": "Fehler beim Senden. Bitte erneut versuchen.",
+        "privacy": "Ich habe die <link>Datenschutzerklärung (öffnet in neuem Tab)</link> gelesen und stimme zu.",
         "name": "Name",
         "email": "E-Mail",
-        "message": "Nachricht"
+        "message": "Nachricht",
+        "errorName": "Bitte gib deinen Namen ein.",
+        "errorEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+        "errorMessage": "Bitte gib eine Nachricht ein.",
+        "privacyRequired": "Bitte akzeptiere die Datenschutzerklärung."
     },
     "404": {
         "title": "Seite nicht gefunden",
@@ -40,5 +47,10 @@
     "thanks": {
         "thankyou": "Vielen Dank!",
         "message": "Deine Nachricht wurde erfolgreich gesendet. Ich melde mich so bald wie möglich."
+    },
+    "language": {
+        "de": "Deutsch",
+        "en": "Englisch",
+        "ariaLabel": "Spracheinstellung"
     }
 }
