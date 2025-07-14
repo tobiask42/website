@@ -3,49 +3,50 @@
     "contact": "Contact",
     "legal": "Legal Notice",
     "privacy": "Privacy Policy",
-    "contentJump": "Jump to Content"
+    "contentJump": "Skip to content"
   },
   "form": {
     "title": "Contact Form",
     "submit": "Send",
-    "sending": "sending...",
-    "error": "Error sending message. Please try again.",
-    "privacy": "I have read and agree to the <link>privacy policy (opens in new tab)</link>.",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "An error occurred while sending. Please try again.",
+    "privacy": "I have read and agree to the <link>privacy policy (opens in a new tab)</link>.",
     "name": "Name",
     "email": "E-mail",
     "message": "Message",
     "errorName": "Please enter your name.",
-    "errorEmail": "Please enter a valid E-mail address.",
+    "errorEmail": "Please enter a valid e-mail address.",
     "errorMessage": "Please enter a message.",
     "privacyRequired": "Please accept the privacy policy."
   },
   "404": {
-    "title": "Page not found",
-    "description": "The page you requested does not exist.",
-    "back": "Back to home"
+    "title": "Page Not Found",
+    "description": "The page you requested could not be found.",
+    "back": "Back to home page"
   },
   "privacy": {
     "title": "Privacy Policy",
     "intro": "This website is a purely private project. It only provides personal content and information. No personal data is stored or processed without your consent.",
     "formTitle": "Contact Form",
-    "formText": "If you send me a message via the contact form, your request will be processed via the <strong>Web3Forms</strong> service. Your name, email address, and message will be used solely for contact purposes. Data is transmitted securely.",
+    "formText": "If you send me a message via the contact form, your request will be processed via the <strong>Web3Forms</strong> service. Your name, e-mail address, and message will be used solely for the purpose of contacting you. Data is transmitted securely.",
     "formLinkLabel": "web3forms.com/privacy",
     "hostingTitle": "Hosting",
     "hostingText": "This website is hosted by <strong>Vercel</strong> (Vercel Inc.). When accessing the site, Vercel may store technical access data (e.g., IP address, timestamp, user agent) for error analysis and infrastructure protection.",
     "hostingLinkLabel": "vercel.com/legal/privacy-policy",
     "cookiesTitle": "Cookies",
-    "cookiesText": "This website uses cookies for storing language setting. It uses no analytics tools. Your data will not be shared with third parties. You can deactivate cookies in your browser. The functionality of the website remains largely intact.",
-    "back": "← Back to homepage"
+    "cookiesText": "This website uses cookies to store your language preference. It does not use analytics tools. Your data is not shared with third parties.",
+    "back": "← Back to home page"
   },
   "impressum": {
     "title": "Legal Notice",
-    "intro": "This website is a purely private, non-commercial project according to § 55 RStV.",
-    "responsible": "Responsible for the content according to § 55 Abs. 2 RStV:",
-    "disclaimer": "No warning without prior contact. If you have legal concerns, please reach out to the email address above."
+    "intro": "This website is a purely private, non-commercial project as defined in § 55 RStV.",
+    "responsible": "Responsible for the content according to § 55 Sec. 2 RStV:",
+    "disclaimer": "No legal notice without prior contact. If you have any concerns or legal issues, please send a message to the e-mail address above. You can disable cookies in your browser. The website's core functionality will remain intact."
   },
   "thanks": {
     "thankyou": "Thank You!",
-    "message": "Your message was successfully delivered. I'll get back to you as soon as I can"
+    "message": "Your message has been successfully sent. I will get back to you as soon as possible."
   },
   "language": {
     "de": "German",
