@@ -3,6 +3,7 @@ import ContactForm from '@/components/ContactForm';
 import { vi } from 'vitest';
 import { IntlProvider } from 'next-intl';
 import '@testing-library/jest-dom';
+import { act } from 'react';
 
 vi.mock('next/navigation', () => ({
   useRouter: () => ({
@@ -36,7 +37,10 @@ describe('ContactForm', () => {
     );
 
     const submitButton = screen.getByRole('button', { name: /senden/i });
-    fireEvent.click(submitButton);
+    act(() => {
+          fireEvent.click(submitButton);
+    })
+
 
     expect(await screen.findByText(/Bitte gib deinen Namen ein/)).toBeInTheDocument();
     expect(await screen.findByText(/Bitte gib eine gültige E-Mail-Adresse ein/)).toBeInTheDocument();
