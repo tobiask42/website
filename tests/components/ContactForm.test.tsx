@@ -29,6 +29,7 @@ vi.mock('next/link', async () => {
   };
 });
 
+// Dummy i18n translations
 const messages = {
   form: {
     title: 'Kontaktformular',
