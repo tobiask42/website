@@ -1,18 +1,34 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
+import userEvent from "@testing-library/user-event";
 import ContactForm from '@/components/ContactForm';
 import { vi } from 'vitest';
 import { IntlProvider } from 'next-intl';
 import '@testing-library/jest-dom';
-import { act } from 'react';
 
 vi.mock('next/navigation', () => ({
   useRouter: () => ({
-    push: vi.fn(),     // mock function für Weiterleitungen
+    push: vi.fn(),
   }),
 }));
 
+vi.mock('next/link', async () => {
+  const React = await import('react');
+  type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+    href: string;
+    children: React.ReactNode;
+  };
+  return {
+    __esModule: true,
+    default: React.forwardRef<HTMLAnchorElement, LinkProps>(
+      ({ href, children, ...rest }, ref) => (
+        <a href={href} ref={ref} {...rest}>
+          {children}
+        </a>
+      )
+    ),
+  };
+});
 
-// Dummy i18n translations
 const messages = {
   form: {
     title: 'Kontaktformular',
@@ -36,11 +52,9 @@ describe('ContactForm', () => {
       </IntlProvider>
     );
 
+    const user = userEvent.setup();
     const submitButton = screen.getByRole('button', { name: /senden/i });
-    act(() => {
-          fireEvent.click(submitButton);
-    })
-
+    await user.click(submitButton);
 
     expect(await screen.findByText(/Bitte gib deinen Namen ein/)).toBeInTheDocument();
     expect(await screen.findByText(/Bitte gib eine gültige E-Mail-Adresse ein/)).toBeInTheDocument();
