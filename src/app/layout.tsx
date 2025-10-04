@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   title: title,
   description: website_description,
   manifest: '/site.webmanifest',
-  themeColor: '#202896ff',
   icons: {
     icon: [
       { url: '/favicon.ico' }, // Fallback
