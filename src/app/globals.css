@@ -27,3 +27,11 @@ html, body {
 html::-webkit-scrollbar, body::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
   }
+  
+body:has(iframe[title="Curriculum Vitae"]) main {
+  padding-top: 0;
+}
+
+body:has(iframe[title="Curriculum Vitae"]) footer {
+  display: none;
+}
