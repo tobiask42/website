@@ -86,8 +86,27 @@ npx playwright test
 ```
 ---
 
-## License
+## License & Usage
+
+### Code (The Template)
+The codebase (Next.js components, styles, and logic) is licensed under the MIT License. You are free to use it as a template for your own personal projects.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+### The Book
+The technical book **"Kubernetes – Technische Übersicht & Best Practices"** is licensed under a  
+[Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc].  
+[![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
+
+### Personal Data & Assets
+**All rights reserved** for the following personal assets. You **may not** use, redistribute, or modify these:
+- All personal **Resume/CV datasets** and translated content
+- The **profile picture** of Tobias Koch
+- Specific branding and personal descriptions
+
+---
+
+[cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
+[cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg
+
 
 ---
 ## Learn More
