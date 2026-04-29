@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebenslauf - Tobias Koch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #222;
+            background: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+            color: #111;
+        }
+
+        h2 {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid #aaa;
+            padding-bottom: 0.2rem;
+            letter-spacing: 0.5px;
+            color: #333;
+        }
+
+        h3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        h3 span {
+            font-weight: normal;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 2px solid #666;
+            flex-shrink: 0;
+        }
+
+        .contact {
+            font-size: 10.5pt;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        .summary,
+        .project-block {
+            background: #f9f9fb;
+            border-left: 3px solid #4a90e2;
+            padding: 0.8rem 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .project-block ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .project-block ul li {
+            position: relative;
+            padding-left: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .project-block ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #4a90e2;
+            font-weight: bold;
+        }
+
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .header img {
+                width: 100px;
+                height: 100px;
+            }
+
+            h3 {
+                flex-direction: column;
+            }
+        }
+
+        .print-break {
+            display: none;
+        }
+
+        @media print {
+            .print-break {
+                display: block;
+                page-break-before: always;
+            }
+            body {
+                font-size: 12pt;
+                padding: 0;
+            }
+
+            .summary,
+            .project-block {
+                background: transparent;
+                border: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="../../images/tobias-koch-profile.jpg" alt="Tobias Koch">
+        <div>
+            <h1>Tobias Koch</h1>
+            <div class="contact">
+                Region Köln / Frechen<br>
+                <a href="https://tobias-koch.dev/de/contact">Kontakt</a> &middot;
+                <a href="https://tobias-koch.dev/de">Website</a> &middot;
+                <a href="https://www.linkedin.com/in/tobias-koch-dev/">LinkedIn</a> &middot;
+                <a href="https://github.com/tobiask42">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="summary">
+        Junior Cloud Engineer mit Erfahrung in Terraform, Kubernetes und Azure.
+        Fokus auf Infrastructure as Code, Automatisierung und reproduzierbare Cloud-Infrastrukturen.
+        Praxis in der Entwicklung eigener Tools sowie im Umgang mit produktiven Systemen.
+    </section>
+
+    <section>
+        <h2>Berufserfahrung</h2>
+
+        <h3>Junior Cloud Engineer <span>Skopos Elements GmbH &middot; 02/2026 &ndash; 04/2026</span></h3>
+        <div class="project-block">
+            <ul>
+                <li>Python-Tool zur Migration von Airbyte-Konfigurationen (API → Terraform)</li>
+                <li>Azure Kubernetes Cluster (AKS) mit Terraform aufgebaut</li>
+                <li>Betrieb eines Produktivclusters begleitet</li>
+                <li>Sicherheitsanalyse inkl. Incident Report und Maßnahmen</li>
+                <li>CI/CD-Workflow gegen Supply-Chain-Angriffe abgesichert</li>
+                <li>GitLab-Probleme analysiert und behoben</li>
+            </ul>
+        </div>
+
+        <h3>Eigene Projekte & Weiterentwicklung <span>03/2024 &ndash; 11/2025</span></h3>
+        <div class="project-block">
+            <ul>
+                <li>Vertiefung von Python und SQL für Datenanalyse und Automatisierung</li>
+                <li>Entwicklung eines RAG-Systems (Retrieval Augmented Generation)</li>
+                <li>Verfassen des Fachbuchs &bdquo;Kubernetes &ndash; Technische Übersicht & Best Practices&ldquo;</li>
+            </ul>
+        </div>
+
+        <h3>Junior Software Developer <span>T-Systems on site services GmbH &middot; 01/2024 &ndash; 02/2025</span></h3>
+        <div class="project-block">
+            <ul>
+                <li>Prototyping und Datenverarbeitung mit Python und Jupyter</li>
+                <li>Bachelorarbeit mit Fokus auf NLP und KI-unterstützte Prozessoptimierung</li>
+                <li>Deployments auf CaaS@DTIT und OTC via GitLab CI/CD und Kubernetes</li>
+                <li>Evaluation moderner API-Gateways (Istio, Traefik, Kong, Gloo Edge)</li>
+                <li>Implementierung von Backend-Schnittstellen in Java (Spring Boot)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ausbildung</h2>
+        <div class="project-block">
+            <h3>B.Sc. Biotechnologie/Bioinformatik <span>Hochschule Emden/Leer &middot; 2017 &ndash; 2025</span></h3>
+            <ul>
+                <li>Schwerpunkt Bioinformatik & Datenanalyse</li>
+            </ul>
+            <h3>Uhrmacher (Industrie) <span>Glashütte &middot; 2013 &ndash; 2017</span></h3>
+        </div>
+    </section>
+
+    <div class="print-break"></div>
+
+    <section>
+        <h2>Fähigkeiten</h2>
+        <div class="project-block">
+            <ul>
+                <li><strong>Cloud & Infrastruktur:</strong> Azure, AWS, Kubernetes, Terraform, Helm</li>
+                <li><strong>DevOps & CI/CD:</strong> Git, GitLab CI/CD, Docker, automatisierte Deployments</li>
+                <li><strong>Programmierung & Scripting:</strong> Python, Bash, Java</li>
+                <li><strong>Monitoring & Betrieb:</strong> Grafana, Loki, Alerting, Incident-Analyse</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Publikation</h2>
+        <div class="project-block">
+            <ul>
+                <li>
+                    <strong>Kubernetes &ndash; Technische Übersicht & Best Practices</strong><br>
+                    Eigenständig verfasstes <a href="https://tobias-koch.dev/kubernetes-buch.pdf">Fachbuch</a> zu
+                    Architektur, Sicherheit und CI/CD.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Sprachen & Interessen</h2>
+        <div class="project-block">
+            <ul>
+                <li>Deutsch (Muttersprache), Englisch (Fließend)</li>
+                <li>Engagement: Segeltrainer für Sportbootführerschein Binnen/See</li>
+                <li>Hobbys: Bogensport (Training & lokale Turniere)</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
