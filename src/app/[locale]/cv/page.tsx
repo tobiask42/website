@@ -11,7 +11,7 @@ export default function CVPage() {
         src={`/cv/${locale}.html`}
         title="Curriculum Vitae"
         className="w-full border-none block"
-        style={{ height: '100vh', display: 'block' }}
+        style={{ height: 'calc(100vh - 64px)', display: 'block' }}
       />
     </main>
   );
