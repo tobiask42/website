@@ -35,6 +35,7 @@ export default function CVPage() {
       )}
 
       <iframe
+        title='Curriculum Vitae'
         ref={iframeRef}
         src={`/cv/${locale}.html`}
         className="w-full border-none block"
