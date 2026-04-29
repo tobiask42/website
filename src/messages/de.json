@@ -52,5 +52,9 @@
         "de": "Deutsch",
         "en": "Englisch",
         "ariaLabel": "Spracheinstellung"
+    },
+    "printButton": {
+        "label": "Als PDF speichern / Drucken",
+        "ariaLabel": "Diese Seite drucken oder als PDF speichern"
     }
 }
