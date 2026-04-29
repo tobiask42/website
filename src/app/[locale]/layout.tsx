@@ -51,7 +51,7 @@ export default async function LocaleLayout({
         </div>
       </header>
 
-      <main id="main" role="main" className="min-h-screen pt-8 bg-gray-100 text-gray-900">
+      <main id="main" role="main" className="min-h-screen bg-gray-100 text-gray-900">
         {children}
       </main>
 
