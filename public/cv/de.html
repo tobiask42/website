@@ -152,7 +152,17 @@
             }
         }
     </style>
+    <base target="_blank">
 </head>
+
+<script>
+  window.addEventListener('scroll', () => {
+    parent.postMessage(
+      { type: 'cv-scroll', scrollY: window.scrollY },
+      '*'
+    );
+  });
+</script>
 
 <body>
     <header class="header">
