@@ -1,12 +1,14 @@
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function CVPage() {
   const locale = useLocale();
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [showButton, setShowButton] = useState(true);
+
+  const t = useTranslations('printButton');
 
   useEffect(() => {
     const handler = (event: MessageEvent) => {
@@ -29,8 +31,9 @@ export default function CVPage() {
         <button
           onClick={handlePrint}
           className="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-blue-600 text-white px-4 py-2 rounded shadow print:hidden"
-        >
-          Drucken
+          aria-label={t('aria-label')}
+           >
+          {t('label')}
         </button>
       )}
 
