@@ -139,6 +139,7 @@
                 display: block;
                 page-break-before: always;
             }
+
             body {
                 font-size: 12pt;
                 padding: 0;
@@ -156,12 +157,12 @@
 </head>
 
 <script>
-  window.addEventListener('scroll', () => {
-    parent.postMessage(
-      { type: 'cv-scroll', scrollY: window.scrollY },
-      '*'
-    );
-  });
+    window.addEventListener('scroll', () => {
+        parent.postMessage(
+            { type: 'cv-scroll', scrollY: window.scrollY },
+            '*'
+        );
+    });
 </script>
 
 <body>
@@ -181,8 +182,8 @@
 
     <section class="summary">
         Junior Cloud Engineer mit Erfahrung in Terraform, Kubernetes und Azure.
-        Fokus auf Infrastructure as Code, Automatisierung und reproduzierbare Cloud-Infrastrukturen.
-        Praxis in der Entwicklung eigener Tools sowie im Umgang mit produktiven Systemen.
+        Fokus auf Infrastructure as Code, Automatisierung und Cloud-Infrastrukturen.
+        Praxis in Toolentwicklung und im Betrieb produktiver Systeme.
     </section>
 
     <section>
