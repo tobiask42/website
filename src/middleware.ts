@@ -40,3 +40,9 @@ export function middleware(request: NextRequest) {
 
   return response;
 }
+
+export const config = {
+  matcher: [
+    '/((?!_next|api|favicon.ico|robots.txt|sitemap.xml|site.webmanifest).*)',
+  ],
+};
