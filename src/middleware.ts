@@ -1,34 +1,35 @@
 import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n/routing';
-import { NextRequest } from 'next/server';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
-const intlMiddleware = createMiddleware(routing);
+const intlMiddleware = createMiddleware({
+  ...routing,
+  localeDetection: false
+});
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // 1. Root-Path behandeln
+  // 1. Root → Default oder Cookie
   if (pathname === '/') {
     const cookieLocale = request.cookies.get('locale')?.value;
 
-    let locale = cookieLocale;
-
-    if (!locale || !routing.locales.includes(locale)) {
-      const acceptLang = request.headers.get('accept-language');
-      locale = acceptLang?.startsWith('de') ? 'de' : 'en';
-    }
+    const locale =
+      routing.locales.includes(cookieLocale || '')
+        ? cookieLocale
+        : routing.defaultLocale;
 
     return NextResponse.redirect(new URL(`/${locale}`, request.url));
   }
 
-  // 2. Standard next-intl middleware
+  // 2. next-intl Middleware ausführen
   const response = intlMiddleware(request);
 
-  // 3. Cookie setzen basierend auf URL
+  // 3. Locale aus URL lesen
   const segments = pathname.split('/').filter(Boolean);
   const locale = segments[0];
 
+  // 4. Cookie setzen
   if (routing.locales.includes(locale)) {
     response.cookies.set('locale', locale, {
       path: '/',
