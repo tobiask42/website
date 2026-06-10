@@ -181,48 +181,71 @@
     </header>
 
     <section class="summary">
-        Cloud Engineer mit Fokus auf Kubernetes, Terraform und CI/CD.
-        Erfahrung im Aufbau automatisierter Infrastruktur und Deployment-Pipelines in Azure.
-        Analyse und Behebung von System- und Sicherheitsproblemen in containerisierten Umgebungen.
+        DevOps / Cloud Engineer mit Schwerpunkt auf dem Betrieb, der Automatisierung und Absicherung
+        containerbasierter Systeme. Zuhause in Kubernetes (AKS), Terraform und CI/CD auf Microsoft Azure
+        mit einem starken Hang zu sauberer Infrastructure as Code, belastbarem Monitoring und gründlichem
+        Troubleshooting. Ergänzt durch solide Backend-Erfahrung (Node.js/TypeScript, Java) und einen
+        fundierten Hintergrund in Datenanalyse und maschinellem Lernen.
     </section>
 
     <section>
         <h2>Berufserfahrung</h2>
 
-        <h3>Cloud Engineer <span>Skopos Elements GmbH &middot; 02/2026 &ndash; 05/2026</span></h3>
+        <h3>Junior Cloud Engineer <span>Skopos Elements GmbH &middot; 02/2026 &ndash; 05/2026</span></h3>
         <div class="project-block">
             <ul>
-                <li>CLI-Tool zur Transformation von Airbyte-API-Zuständen in Terraform-Code</li>
-                <li>Aufbau und Provisionierung eines AKS-Clusters mit Terraform</li>
-                <li>Analyse und Troubleshooting eines produktiven Kubernetes-Clusters</li>
-                <li>Sicherheitsanalyse eines Kubernetes-Clusters mit Incident Report</li>
-                <li>Absicherung von Prozessen gegen Supply-Chain-Angriffe</li>
-                <li>Logrotate- und Update-Probleme auf GitLab-Server via SSH/CLI gelöst</li>
+                <li>Betrieb und Analyse eines produktiven Kubernetes-Clusters in Microsoft Azure (AKS), inkl.
+                    Fehleranalyse mit K9s</li>
+                <li>Provisionierung von Azure-Infrastruktur per Terraform (AKS, Remote State, Helm-Deployments) &ndash;
+                    auch in einer eigenen Testumgebung</li>
+                <li>Entwicklung eines CLI-Tools, das Airbyte-API-Responses über eine Template-Engine in Terraform-Code
+                    überführt</li>
+                <li>Aufbau eines Logging- und Monitoring-Stacks mit Prometheus, Grafana, Loki und Alloy</li>
+                <li>Durchführung eines Security-Audits der Cloud-Infrastruktur inkl. Incident Report (Hardening,
+                    Supply-Chain-Aspekte)</li>
+                <li>Troubleshooting produktiver Linux-Server (GitLab, Logrotate, APT, PostgreSQL)</li>
             </ul>
         </div>
 
-        <h3>Eigene Projekte & Weiterentwicklung <span>03/2024 &ndash; 11/2025</span></h3>
+        <h3>Werkstudent Junior Software Developer <span>T-Systems on site services GmbH &middot; 01/2024 &ndash;
+                02/2025</span></h3>
         <div class="project-block">
             <ul>
-                <li>Vertiefung von Python und SQL für Datenanalyse und Automatisierung
+                <li>Entwicklung modularer Backend-APIs mit Node.js, später auf TypeScript umgestellt (u. a.
+                    SSE-Eventing, OAuth2/OIDC-Authentifizierung)</li>
+                <li>Backend-Schnittstellen in Java (Spring Boot) zur Datenverarbeitung und -speicherung</li>
+                <li>Integration einer Prometheus-Metrik-Schnittstelle für HTTP-Requests (Node.js)</li>
+                <li>Deployment containerisierter Anwendungen auf Kubernetes (Helm) und Aufbau von GitLab-CI/CD-Pipelines
                 </li>
-                <li>MCP-Server für dokumentbasierte RAG-Pipelines</li>
-                <li>Verfassen des Fachbuchs <a href="https://tobias-koch.dev/kubernetes-buch.pdf"
-                        class="inline-link">Kubernetes &ndash; Technische Übersicht & Best Practices</a></li>
+                <li>Weiterentwicklung eines internen CRM-Tools und Bearbeitung von Fehlertickets</li>
+                <li>Konzeption und prototypische Umsetzung eines NLP-/ML-Systems zur KI-gestützten Zuordnung von
+                    Mitarbeitern zu Aufträgen (Bachelorarbeit)</li>
+                <li>Erstellung und Optimierung von SQL-Abfragen (MySQL)</li>
+                <li>Erste praktische Erfahrung mit Go</li>
             </ul>
         </div>
+    </section>
 
-        <h3>Junior Software Developer <span>T-Systems on site services GmbH &middot; 01/2024 &ndash; 02/2025</span></h3>
+    <section>
+        <h2>Projekte &amp; Eigenstudium</h2>
         <div class="project-block">
+            <p style="margin:0 0 0.4em 0;font-weight:600;">Eigenständig umgesetzt</p>
             <ul>
-                <li>Deployment containerisierter Anwendungen mit Kubernetes und GitLab CI/CD</li>
-                <li>Entwicklung von Backend-Schnittstellen mit Java (Spring Boot)</li>
-                <li>Aufbau von Test-APIs inkl. OAuth2-Authentifizierung und Monitoring</li>
-                <li>Automatisierung von Deployments in CI/CD-Pipelines</li>
-                <li>Analyse und Behebung von Fehlern im Anwendungskontext (Ticketsystem)</li>
-                <li>Evaluation von API-Gateways (Istio, Traefik, Kong, Gloo Edge)</li>
-                <li>Entwicklung eines Systems zur KI-gestützten Auftragszuordnung</li>
-                <li>Erlernen der Programmiersprache Go</li>
+                <li><strong>MCP-Server &amp; RAG-System:</strong> Self-hosted Pipeline aus Crawling, Chunking,
+                    Vektor-Datenbank (ChromaDB) und lokalem LLM (Ollama), inkl. MCP-Server und Job-Orchestrierung</li>
+                <li><strong>Mehrsprachige Website (Next.js):</strong> i18n, Accessibility und automatisierte Tests
+                    (Vitest, Playwright)</li>
+                <li><strong>Fachbuch „Kubernetes &ndash; Technische Übersicht &amp; Best Practices":</strong>
+                    umfangreiches Werk zu Architektur, Sicherheit, CI/CD, Operators, ArgoCD/Tekton, RBAC u. v. m.</li>
+            </ul>
+            <p style="margin:0.8em 0 0.4em 0;font-weight:600;">Explorativ &amp; zur Weiterbildung</p>
+            <ul>
+                <li><strong>Data Engineering:</strong> Vertiefung in Airflow, dbt und Spark (Pipelines,
+                    Transformationen, Orchestrierung)</li>
+                <li><strong>Finanzanalyse-Engine:</strong> explorative Bewertungs-/DCF-Berechnungen mit sauberer
+                    Architektur (Ports &amp; Adapters, Tests)</li>
+                <li><strong>GPU-Computing:</strong> kleine CUDA-Experimente zum tieferen Verständnis GPU-beschleunigten
+                    Machine Learnings</li>
             </ul>
         </div>
     </section>
@@ -240,18 +263,20 @@
         </div>
     </section>
 
-
-
     <section>
         <h2>Fähigkeiten</h2>
         <div class="project-block">
             <ul>
-                <li><strong>Cloud:</strong> Azure, AWS</li>
-                <li><strong>Container & Orchestrierung:</strong> Kubernetes (AKS), Docker</li>
-                <li><strong>Infrastructure as Code:</strong> Terraform, Helm</li>
-                <li><strong>CI/CD:</strong> GitLab CI/CD</li>
-                <li><strong>Programmierung:</strong> Python, Bash, Java</li>
-                <li><strong>Monitoring:</strong> Grafana, Loki, Alerting</li>
+                <li><strong>Cloud:</strong> Microsoft Azure, AWS</li>
+                <li><strong>Container &amp; Orchestrierung:</strong> Kubernetes (AKS), Docker, Helm</li>
+                <li><strong>Infrastructure as Code:</strong> Terraform (Azure &amp; AWS)</li>
+                <li><strong>CI/CD &amp; Versionskontrolle:</strong> GitLab CI/CD, Git</li>
+                <li><strong>Monitoring &amp; Observability:</strong> Prometheus, Grafana, Loki, Alloy</li>
+                <li><strong>Programmierung:</strong> Python, TypeScript/JavaScript (Node.js), Java, Bash</li>
+                <li><strong>Daten &amp; ML:</strong> NLP, Machine Learning, Vektor-Datenbanken, SQL (MySQL/PostgreSQL)
+                </li>
+                <li><strong>Data Engineering:</strong> Airflow, dbt, Spark</li>
+                <li><strong>In Lernphase:</strong> C++, Ansible</li>
             </ul>
         </div>
     </section>
@@ -273,7 +298,7 @@
         <h2>Sprachen & Interessen</h2>
         <div class="project-block">
             <ul>
-                <li>Deutsch (Muttersprache), Englisch (Fließend)</li>
+                <li>Deutsch (Muttersprache), Englisch (Verhandlungssicher)</li>
                 <li>Engagement: Segeltrainer für Sportbootführerschein Binnen/See</li>
                 <li>Hobbys: Bogensport (Training & lokale Turniere)</li>
             </ul>

@@ -171,7 +171,7 @@
         <div>
             <h1>Tobias Koch</h1>
             <div class="contact">
-                Cologne Region, Germany<br>
+                Cologne / Frechen area<br>
                 <a href="https://tobias-koch.dev/en/contact">Contact</a> &middot;
                 <a href="https://tobias-koch.dev/en">Website</a> &middot;
                 <a href="https://www.linkedin.com/in/tobias-koch-dev/">LinkedIn</a> &middot;
@@ -181,47 +181,70 @@
     </header>
 
     <section class="summary">
-        Cloud Engineer specialising in Kubernetes, Terraform and CI/CD.
-        Experience building automated infrastructure and deployment pipelines in Azure environments.
-        Skilled in analysing and resolving system and security issues in containerised systems.
+        DevOps / Cloud Engineer with a focus on operating, automating, and securing container-based systems.
+        At home with Kubernetes (AKS), Terraform, and CI/CD on Microsoft Azure, with a strong inclination
+        towards clean Infrastructure as Code, resilient monitoring, and thorough troubleshooting. Complemented
+        by solid backend experience (Node.js/TypeScript, Java) and a sound background in data analysis and
+        machine learning.
     </section>
 
     <section>
-        <h2>Professional Experience</h2>
+        <h2>Work Experience</h2>
 
-        <h3>Cloud Engineer <span>Skopos Elements GmbH &middot; 02/2026 &ndash; 05/2026</span></h3>
+        <h3>Junior Cloud Engineer <span>Skopos Elements GmbH &middot; 02/2026 &ndash; 05/2026</span></h3>
         <div class="project-block">
             <ul>
-                <li>CLI tool for transforming Airbyte API states into Terraform code</li>
-                <li>Setup and provisioning of an AKS cluster using Terraform</li>
-                <li>Analysis and troubleshooting of a production Kubernetes cluster</li>
-                <li>Security analysis of a Kubernetes cluster including incident report</li>
-                <li>Hardening processes against supply chain attacks</li>
-                <li>Resolved logrotate and update issues on a GitLab server via SSH/CLI</li>
+                <li>Operation and analysis of a production Kubernetes cluster on Microsoft Azure (AKS), including
+                    fault analysis using K9s</li>
+                <li>Provisioning of Azure infrastructure via Terraform (AKS, Remote State, Helm deployments) &ndash;
+                    including in a dedicated test environment</li>
+                <li>Development of a CLI tool that transforms Airbyte API responses into Terraform code via a
+                    template engine</li>
+                <li>Set-up of a logging and monitoring stack with Prometheus, Grafana, Loki, and Alloy</li>
+                <li>Conducted a security audit of the cloud infrastructure including an incident report (hardening,
+                    supply chain aspects)</li>
+                <li>Troubleshooting of production Linux servers (GitLab, Logrotate, APT, PostgreSQL)</li>
             </ul>
         </div>
 
-        <h3>Personal Projects & Continuous Learning <span>03/2024 &ndash; 11/2025</span></h3>
+        <h3>Working Student Junior Software Developer <span>T-Systems on site services GmbH &middot; 01/2024 &ndash;
+                02/2025</span></h3>
         <div class="project-block">
             <ul>
-                <li>Advanced use of Python and SQL for data analysis and automation</li>
-                <li>MCP server for document-based RAG pipelines</li>
-                <li>Author of the technical book <a href="https://tobias-koch.dev/kubernetes-buch.pdf"
-                        class="inline-link">Kubernetes &ndash; Technische Übersicht & Best Practices</a></li>
+                <li>Development of modular backend APIs with Node.js, later migrated to TypeScript (incl.
+                    SSE eventing, OAuth2/OIDC authentication)</li>
+                <li>Backend interfaces in Java (Spring Boot) for data processing and storage</li>
+                <li>Integration of a Prometheus metrics endpoint for HTTP requests (Node.js)</li>
+                <li>Deployment of containerised applications on Kubernetes (Helm) and set-up of GitLab CI/CD pipelines</li>
+                <li>Further development of an internal CRM tool and handling of bug tickets</li>
+                <li>Conception and prototypical implementation of an NLP/ML system for AI-assisted assignment
+                    of employees to orders (Bachelor's thesis)</li>
+                <li>Creation and optimisation of SQL queries (MySQL)</li>
+                <li>Initial hands-on experience with Go</li>
             </ul>
         </div>
+    </section>
 
-        <h3>Junior Software Developer <span>T-Systems on site services GmbH &middot; 01/2024 &ndash; 02/2025</span></h3>
+    <section>
+        <h2>Projects &amp; Self-Study</h2>
         <div class="project-block">
+            <p style="margin:0 0 0.4em 0;font-weight:600;">Independently implemented</p>
             <ul>
-                <li>Deployment of containerised applications using Kubernetes and GitLab CI/CD</li>
-                <li>Development of backend interfaces with Java (Spring Boot)</li>
-                <li>Implementation of test APIs including OAuth2 authentication and monitoring</li>
-                <li>Automation of deployments in CI/CD pipelines</li>
-                <li>Analysis and resolution of application-related issues (ticketing system)</li>
-                <li>Evaluation of API gateways (Istio, Traefik, Kong, Gloo Edge)</li>
-                <li>Development of an AI-assisted task allocation system</li>
-                <li>Learning the Go programming language</li>
+                <li><strong>MCP Server &amp; RAG System:</strong> Self-hosted pipeline comprising crawling, chunking,
+                    vector database (ChromaDB), and local LLM (Ollama), including MCP server and job orchestration</li>
+                <li><strong>Multilingual Website (Next.js):</strong> i18n, accessibility, and automated tests
+                    (Vitest, Playwright)</li>
+                <li><strong>Technical Book &ldquo;Kubernetes &ndash; Technical Overview &amp; Best Practices&rdquo;:</strong>
+                    comprehensive work covering architecture, security, CI/CD, Operators, ArgoCD/Tekton, RBAC, and more</li>
+            </ul>
+            <p style="margin:0.8em 0 0.4em 0;font-weight:600;">Exploratory &amp; continuing education</p>
+            <ul>
+                <li><strong>Data Engineering:</strong> In-depth study of Airflow, dbt, and Spark (pipelines,
+                    transformations, orchestration)</li>
+                <li><strong>Financial Analysis Engine:</strong> Exploratory valuation/DCF calculations with clean
+                    architecture (Ports &amp; Adapters, tests)</li>
+                <li><strong>GPU Computing:</strong> Small CUDA experiments for a deeper understanding of
+                    GPU-accelerated machine learning</li>
             </ul>
         </div>
     </section>
@@ -231,37 +254,38 @@
     <section>
         <h2>Education</h2>
         <div class="project-block">
-            <h3>B.Sc. Biotechnology / Bioinformatics <span>University of Applied Sciences Emden/Leer &middot; 2017
-                    &ndash; 2025</span></h3>
+            <h3>B.Sc. Biotechnology/Bioinformatics <span>Hochschule Emden/Leer &middot; 2017 &ndash; 2025</span></h3>
             <ul>
-                <li>Focus: Bioinformatics & Data Analysis</li>
+                <li>Focus on bioinformatics &amp; data analysis</li>
             </ul>
-            <h3>Watchmaker (Industry) <span>Glashütte &middot; 2013 &ndash; 2017</span></h3>
+            <h3>Watchmaker (Industrial) <span>Glashütte &middot; 2013 &ndash; 2017</span></h3>
         </div>
     </section>
-
 
     <section>
         <h2>Skills</h2>
         <div class="project-block">
             <ul>
-                <li><strong>Cloud:</strong> Azure, AWS</li>
-                <li><strong>Containers & Orchestration:</strong> Kubernetes (AKS), Docker</li>
-                <li><strong>Infrastructure as Code:</strong> Terraform, Helm</li>
-                <li><strong>CI/CD:</strong> GitLab CI/CD</li>
-                <li><strong>Programming:</strong> Python, Bash, Java</li>
-                <li><strong>Monitoring:</strong> Grafana, Loki, alerting</li>
+                <li><strong>Cloud:</strong> Microsoft Azure, AWS</li>
+                <li><strong>Container &amp; Orchestration:</strong> Kubernetes (AKS), Docker, Helm</li>
+                <li><strong>Infrastructure as Code:</strong> Terraform (Azure &amp; AWS)</li>
+                <li><strong>CI/CD &amp; Version Control:</strong> GitLab CI/CD, Git</li>
+                <li><strong>Monitoring &amp; Observability:</strong> Prometheus, Grafana, Loki, Alloy</li>
+                <li><strong>Programming:</strong> Python, TypeScript/JavaScript (Node.js), Java, Bash</li>
+                <li><strong>Data &amp; ML:</strong> NLP, Machine Learning, Vector Databases, SQL (MySQL/PostgreSQL)</li>
+                <li><strong>Data Engineering:</strong> Airflow, dbt, Spark</li>
+                <li><strong>Currently learning:</strong> C++, Ansible</li>
             </ul>
         </div>
     </section>
 
     <section>
-        <h2>Publications</h2>
+        <h2>Publication</h2>
         <div class="project-block">
             <ul>
                 <li>
-                    <strong>Kubernetes &ndash; Technical Overview & Best Practices</strong><br>
-                    Self-authored <a href="https://tobias-koch.dev/kubernetes-buch.pdf">technical book</a> covering
+                    <strong>Kubernetes &ndash; Technical Overview &amp; Best Practices</strong><br>
+                    Independently authored <a href="https://tobias-koch.dev/kubernetes-buch.pdf">technical book</a> on
                     architecture, security, and CI/CD.
                 </li>
             </ul>
@@ -269,12 +293,12 @@
     </section>
 
     <section>
-        <h2>Languages & Interests</h2>
+        <h2>Languages &amp; Interests</h2>
         <div class="project-block">
             <ul>
-                <li>German (native), English (fluent)</li>
-                <li>Volunteer: Sailing instructor (inland and coastal licences)</li>
-                <li>Interests: Archery (training and local competitions)</li>
+                <li>German (native), English (business fluent)</li>
+                <li>Volunteering: sailing instructor for inland and coastal powerboat licences</li>
+                <li>Hobbies: archery (training &amp; local competitions)</li>
             </ul>
         </div>
     </section>
